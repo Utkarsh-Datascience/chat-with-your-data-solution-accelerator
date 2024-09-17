@@ -19,6 +19,7 @@ from backend.batch.utilities.helpers.env_helper import EnvHelper
 from backend.batch.utilities.helpers.orchestrator_helper import Orchestrator
 from backend.batch.utilities.helpers.config.config_helper import ConfigHelper
 from backend.batch.utilities.helpers.config.conversation_flow import ConversationFlow
+from backend.api.chat_history import bp_chat_history_response
 from azure.mgmt.cognitiveservices import CognitiveServicesManagementClient
 from azure.identity import DefaultAzureCredential
 from backend.batch.utilities.helpers.azure_blob_storage_client import (
@@ -500,5 +501,5 @@ def create_app():
         ConfigHelper.get_active_config_or_default.cache_clear()
         result = ConfigHelper.get_active_config_or_default()
         return jsonify({"ai_assistant_type": result.prompts.ai_assistant_type})
-
+    app.register_blueprint(bp_chat_history_response, url_prefix='/api')
     return app
