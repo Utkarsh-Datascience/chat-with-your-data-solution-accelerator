@@ -627,19 +627,20 @@ psutil = ">=5.9,<6.0"
 
 [[package]]
 name = "azure-search-documents"
-version = "11.6.0b1"
+version = "11.6.0b5"
 description = "Microsoft Azure Cognitive Search Client Library for Python"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "azure-search-documents-11.6.0b1.tar.gz", hash = "sha256:8bf1e9110515b6e750bdcdfc67d1a80c8b10588ac4fbd4ac0d4ff4f11ae24cb6"},
-    {file = "azure_search_documents-11.6.0b1-py3-none-any.whl", hash = "sha256:1d2273b85b366c1f23c73e4404b604583e35318f84615676c8ce5c27afab037b"},
+    {file = "azure_search_documents-11.6.0b5-py3-none-any.whl", hash = "sha256:de39e73ede9487694916aecc19dade82b48f4ebfc267cdeccef8678b5856cba7"},
+    {file = "azure_search_documents-11.6.0b5.tar.gz", hash = "sha256:1bba58d39c78d7b68408340ee0c472691e304fddd6eb9ac136eadf73cd864356"},
 ]
 
 [package.dependencies]
-azure-common = ">=1.1,<2.0"
-azure-core = ">=1.28.0,<2.0.0"
+azure-common = ">=1.1"
+azure-core = ">=1.28.0"
 isodate = ">=0.6.0"
+typing-extensions = ">=4.6.0"
 
 [[package]]
 name = "azure-storage-blob"
@@ -7102,4 +7103,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "f40f7c65c9194b48025a151818c972e4fe1b7e2cb8d8a3fcb4897499828aaac9"
+content-hash = "27427a2df3fe84cb374b042651fc641910c0c4cd44ad15899a6227ce4f86934e"
