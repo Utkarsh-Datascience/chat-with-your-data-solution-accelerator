@@ -643,26 +643,26 @@ isodate = ">=0.6.0"
 
 [[package]]
 name = "azure-storage-blob"
-version = "12.20.0"
+version = "12.24.0"
 description = "Microsoft Azure Blob Storage Client Library for Python"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "azure-storage-blob-12.20.0.tar.gz", hash = "sha256:eeb91256e41d4b5b9bad6a87fd0a8ade07dd58aa52344e2c8d2746e27a017d3b"},
-    {file = "azure_storage_blob-12.20.0-py3-none-any.whl", hash = "sha256:de6b3bf3a90e9341a6bcb96a2ebe981dffff993e9045818f6549afea827a52a9"},
+    {file = "azure_storage_blob-12.24.0-py3-none-any.whl", hash = "sha256:4f0bb4592ea79a2d986063696514c781c9e62be240f09f6397986e01755bc071"},
+    {file = "azure_storage_blob-12.24.0.tar.gz", hash = "sha256:eaaaa1507c8c363d6e1d1342bd549938fdf1adec9b1ada8658c8f5bf3aea844e"},
 ]
 
 [package.dependencies]
 azure-core = [
-    {version = ">=1.28.0"},
-    {version = ">=1.28.0", extras = ["aio"], optional = true, markers = "extra == \"aio\""},
+    {version = ">=1.30.0"},
+    {version = ">=1.30.0", extras = ["aio"], optional = true, markers = "extra == \"aio\""},
 ]
 cryptography = ">=2.1.4"
 isodate = ">=0.6.1"
 typing-extensions = ">=4.6.0"
 
 [package.extras]
-aio = ["azure-core[aio] (>=1.28.0)"]
+aio = ["azure-core[aio] (>=1.30.0)"]
 
 [[package]]
 name = "azure-storage-file-datalake"
@@ -7102,4 +7102,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "f40f7c65c9194b48025a151818c972e4fe1b7e2cb8d8a3fcb4897499828aaac9"
+content-hash = "58761bcde7f3105dd7a113ddc0a2742163ec8dc76a1309e7896c9516e55bbb24"
